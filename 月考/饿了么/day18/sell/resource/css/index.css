@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+html, body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+img {
+    vertical-align: top;
+}
+.wrap {
+    width: 100%;
+    background: #eee;
+}
+/*header*/
+header {
+    margin: auto;
+    width: 1000px;
+    overflow: hidden;
+    background: #fff;
+}
+header .list-l,
+header .list-r {
+    padding: 5px 0;
+    height: 40px;
+}
+header .list-l{
+    float: left;
+}
+header .list-r {
+    float: right;
+}
+header .list-l li,
+header .list-r li {
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.bg {
+    color: #ffff00;
+}
+header .list-l li:first-child,
+header .list-r li:first-child {
+    color: #0000ff;
+}
+header .list-l li.active:after {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    content: " ";
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #0000ff;
+}
+header .list-l li:last-child,
+header .list-r li:last-child {
+    border: none;
+}
+
+/*nav*/
+nav {
+    margin: 20px auto 0;
+    width: 1000px;
+    background: #fff;
+}
+nav ul {
+    overflow: hidden;
+    padding: 10px 0;
+}
+nav ul li {
+    float: left;
+    margin-left: 20px;
+    width: 180px;
+    line-height: 40px;
+    text-align: left;
+}
+nav ul li.active {
+    background: #0000ff;
+    color: #fff;
+}
+
+/*section*/
+section {
+    width: 1000px;
+    margin: 20px auto 0;
+}
+section .title {
+    overflow: hidden;
+}
+section .title h3 {
+    float: left;
+    font-weight: 500;
+    vertical-align: bottom;
+}
+section .title span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #ccc;
+    vertical-align: bottom;
+}
+section .content {
+    overflow: hidden;
+}
+section .content dl {
+    float: left;
+    width: 490px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #fff;
+    font-size: 12px;
+    color: #ccc;
+
+}
+section .content dl:nth-of-type(2n+1) {
+    margin-left: 0;
+}
+section .content dl dt {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+section .content dl dt img {
+    width: 100%;
+    height: 100%;
+}
+section .content dl dd {
+    float: right;
+    padding: 10px;
+    width: 370px;
+    height: 80px;
+}
+section .content dl dd p {
+    margin-bottom: 5px;
+}
+section .content dl dd .des {
+    font-weight:bold;
+    color: #333;
+}
+section .content dl dd .shopping-content {
+    margin-top: 15px;
+    overflow: hidden;
+}
+section .content dl dd .shopping-content.suancaiyu {
+    margin-top: 5px;
+}
+section .content dl dd .shopping-content .shopping-cart {
+    float: right;
+    padding: 3px 13px;
+    border-radius: 20px;
+    background: #1288db;
+    color: #fff;
+}
+
+/*弹窗*/
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+    display: none;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}
+.modal-dialog .modal-title {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #ccc;
+}
+.modal-dialog .modal-content {
+    margin-top: 30px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.modal-dialog .modal-content dt {
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+.modal-dialog .modal-content dt img {
+    width: 100%;
+    height: 100%;
+}
+.modal-dialog .modal-content dd {
+    float: left;
+    width: 360px;
+    margin-left: 20px;
+}
+.modal-dialog .modal-content .shopping-content {
+    margin-top: 30px;
+}
+.modal-dialog .modal-content .shopping {
+    float: right;
+    padding: 3px 13px;
+    border-radius: 20px;
+    background: #1288db;
+    color: #fff;
+}

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+.wrap{
+    width: 800px;
+    border: 1px solid red;
+    margin: 0 auto
+}
+.content{
+    margin: 10px;
+    
+}
+.box{
+    border: 1px solid #d0cbcb;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.box h4 span{
+    float: right;
+    padding: 0 10px;
+}
+.box p{
+    font-size: 14px;
+    color: #636363;
+    margin-bottom: 10px;
+}
+/* 遮罩层 */
+.dialog{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none
+}
+.dialog .main{
+    width: 80%;
+    min-height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -40%;
+    /* margin-top: -40px; */
+}
+.main i{
+    color: red
+}
+.btn.active{
+    background: red;
+    color:#fff
+}
+.d-close{
+    position: absolute;
+    right: 5px;
+}
+.main .tip{
+    color: red;
+    display: none
+}
+.error input{border: 1px solid red}
+.error .tip{display:inline-block}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <p><button id='addBtn'>新增收货地址</button> <span>您一共创建了<i class="num">3</i>个</span></p>
+        <div class="content">
+            <div class="box">
+                <h4>公司 <span class="close">&times;</span></h4>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+            </div>
+            <div class="box">
+                <h4>学校<span class="close">&times;</span></h4>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+                <p>收货人：<span>八维</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- 以下时弹框 -->
+    <div class="dialog" id="dialog">
+        <div class="main" id="form">
+            <span class="d-close">&times;</span>
+            <p><i>*</i><span>收货人：</span><input type="text" id='name'><span class='tip'>不能为空</span></p>
+            <p><i>*</i><span>详细地址：</span><input type="text" id='address'><span class='tip'>不能为空</span></p>
+            <p><i>*</i><span>手机号：</span><input type="text" id='mobile'><span class='tip'>不能为空</span></p>
+            <p><span>邮箱：</span><input type="text" id='email'><span class='tip'>不能为空</span></p>
+            <p><span>地址别名：</span>
+                <input type="text" id='alis'>
+                建议填写常用名称
+                <button class="btn">家</button>
+                <button class="btn">父母家</button>
+                <button class="btn">公司</button>
+            </p>
+            <p><button id="submit">保存收货地址</button></p>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main='main'></script>
+</body>
+
+</html>

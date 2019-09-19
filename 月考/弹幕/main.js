@@ -1,0 +1,12 @@
+require.config({
+    baseUrl:"js"
+})
+require(["dom","msg"],function(D,msg){
+    msg({
+        sendBtn:D.getD(".send"),//发送的按钮
+        inputC:D.getD(".ipt"),//输入的内容的容器
+        contentsC:D.getD(".contents"),//左侧弹幕的容器
+        listC:D.getD(".list"),//右侧弹幕列表
+        footC:D.getD(".foot")
+    })
+})

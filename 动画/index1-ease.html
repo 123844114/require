@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            background: red;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script src="velocity.min.js"></script>
+<script>
+    var divs = document.getElementsByTagName("div");
+    Velocity(divs[0],{
+        marginLeft:1000
+    },{
+        duration:3000,
+        easing:"ease-in"
+    })
+    Velocity(divs[1],{
+        marginLeft:1000
+    },{
+        duration:3000,
+        easing:"ease-out"
+    })
+    Velocity(divs[2],{
+        marginLeft:1000
+    },{
+        duration:3000,
+        easing:"ease-in-out"
+    })
+    Velocity(divs[3],{
+        marginLeft:1000
+    },{
+        duration:3000,
+        easing:"linear"
+    })
+</script>
+</html>

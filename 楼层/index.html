@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .leftbar span {
+            display: inline-block;
+            height: 30px;
+        }
+
+        .leftbar {
+            position: fixed;
+            right: 10px;
+            border: 1px solid red;
+            top: 0;
+            height: 200px;
+            width: 45px;
+            z-index: 10;
+            background: #fff;
+        }
+        .leftbar .active{
+            background: red
+        }
+        *{
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="h1">一楼</h1>
+        <div style="height: 300px;background:red"></div>
+        <h1 id="h2">二楼</h1>
+        <div style="height: 300px;background:yellow"></div>
+        <h1 id="h3">三楼</h1>
+        <div style="height: 300px;background:blue"></div>
+        <h1 id="h4">四楼</h1>
+        <div style="height: 300px;background:green"></div>
+        <h1 id="h5">五楼</h1>
+        <div style="height: 300px;background:pink"></div>
+    </div>
+    <div id="left" class="leftbar">
+        <span>一楼</span>
+        <span>二楼</span>
+        <span>三楼</span>
+        <span>四楼</span>
+        <span>五楼</span>
+    </div>
+
+    <script>
+    document.addEventListener('scroll',function(e){
+        // console.log(document.body.scrollTop||document.documentElement.scrollTop)
+        var scrollTop = document.body.scrollTop||document.documentElement.scrollTop
+        console.log(h1.offsetTop,h2.offsetTop,scrollTop)
+
+        if(scrollTop>=h5.offsetTop){
+            setSpanCss(4)
+        }else if(scrollTop>=h4.offsetTop){
+            setSpanCss(3)
+        }else if(scrollTop>=h3.offsetTop){
+            setSpanCss(2)
+        }else if(scrollTop>=h2.offsetTop){
+            setSpanCss(1)
+        }else{
+            setSpanCss(0)
+        }
+        // if(scrollTop>=h1.offsetTop&&scrollTop<=h2.offsetTop){
+        //    document.querySelectorAll('#left>span')[1].style.color='red'
+        // }else{
+        //     document.querySelectorAll('#left>span')[1].style.color='#000'
+        // }
+    })
+    document.querySelectorAll('#left>span').forEach(function(item,i){
+        item.onclick=function(){
+            console.log(document.querySelector(`#h${i}`))
+            document.documentElement.scrollTop=document.querySelector(`#h${i}`).offsetTop
+            setSpanCss(i)
+        }
+    })
+      function setSpanCss(index){
+        //   debugger
+        document.querySelectorAll('#left>span').forEach(function(item){
+            console.log(item)
+            item.className=''
+        })
+        document.querySelectorAll('#left>span')[index].className='active'
+      }
+
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="mySelect">
+        <option value="a">one</option>
+        <option value="b" selected>two</option>
+        <option value="c">three</option>
+    </select>
+    <div id="demo">点击/div>
+    <script>
+    //    demo.onclick=function(){
+    //        alert(1)
+    //    }
+    //    demo.onclick=function(){
+    //        alert(2)
+    //    }
+    function demo1(){
+        alert(1)
+    }
+    function demo2(){
+        alert(2)
+    }
+    demo.addEventListener('click',function(){
+        demo1()
+    })
+    demo.addEventListener('click',function(){
+        demo2()
+    })
+    </script>
+</body>
+
+</html>

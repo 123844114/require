@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{width:100px;height:100px;background: red}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+<script src="velocity.min.js"></script>
+<script>
+    var divs = document.getElementsByTagName("div");
+    Velocity(divs[0],{
+        marginLeft:1000,
+        width:200,
+        height:200,
+        "margin-top":200,
+        "border-radius":"50%",
+        backgroundColor:"#0f0"
+        // "margin-left":1000
+    },{
+       duration:2000, //动画持续的时间
+       //loop:true//
+       delay:2000,
+       begin:function(){
+           console.log(2222);
+       },
+       complete:function(){
+           console.log("动画结束了");
+       }
+    })
+</script>
+</html>

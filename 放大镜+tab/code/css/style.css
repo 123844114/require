@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 530px;
+    border: 1px solid red
+}
+.left{
+    width: 430px;
+    height: 500px;
+    /* border: 1px solid #dedede */
+}
+.tab-content{
+    width: 430px;
+    height: 430px;
+    border: 1px solid #dedede;
+    overflow: hidden;
+    position: relative;
+}
+.tab-content>img{
+    width: 100%;
+}
+.tab-bar{
+    margin-top: 10px;
+}
+.tab-bar>div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #dedede;
+    overflow:hidden;
+    margin:0 10px;
+    float: left;
+}
+.tab-bar>div.active{
+    border: 1px solid red
+}
+.tab-bar>div>img{
+    width: 100%
+}
+.smallBox{
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

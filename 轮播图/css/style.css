@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none
+}
+#carouse{
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto
+}
+#carouse>ul{
+    width: 1500px;
+    height: 200px;
+    overflow: hidden;
+
+}
+ul>li{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+ul>li>img{
+    width: 100%
+}
+.node{
+    position: absolute;
+    bottom: 0
+}
+.node>span{
+    width: 20px;
+    height: 20px;
+    background: #dee1ec;
+    border-radius: 50%;
+    display: inline-block
+}
+.node>span.active{
+    background: red
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    background: red
+}
+.left {
+    left: 0
+}
+.right{
+    right: 0
+}

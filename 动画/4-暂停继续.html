@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            div{width:100px;height:100px;background: red}
+   </style>
+</head>
+<body>
+    <button>暂停</button>
+    <button>继续</button>
+    <button>停止</button>
+    <div></div>
+</body>
+<script src="velocity.min.js"></script>
+<script>
+    var div = document.querySelector("div");
+    Velocity(div,{
+        marginLeft:1000
+    },{
+        duration:5000,
+    })
+    var btns = document.querySelectorAll("button");
+    btns[2].onclick = function(){
+        Velocity(div,"stop");
+    }
+    btns[0].onclick = function(){
+        Velocity(div,"pause");
+    }
+    btns[1].onclick = function(){
+        Velocity(div,"resume");
+    }
+    div.onmouseover = function(){
+        Velocity(div,"pause");
+    }
+    div.onmouseout = function(){
+        Velocity(div,"resume");
+    }
+</script>
+</html>

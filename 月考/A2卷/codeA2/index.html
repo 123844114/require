@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h4>一款基于树形结构的选择器，本地预览请用火狐浏览，点击修改查看效果</h4>
+    <div class="cont">
+        <span>授权部门</span>
+        <ul id="top">
+            <li>前端框架开发会 <span>&times;</span></li>
+            <li>前端框架开发会 <span>&times;</span></li>
+        </ul>
+        <button id='changeBtn'>修改</button>
+    </div>
+    <hr>
+    <!-- 弹框 -->
+    <div class="dialog">
+        <div class="menu">
+            <div class="body">
+                <ul id="menu">
+                    <li class="open">
+                        <p>前端组</p>
+                        <ul class="children">
+                            <li>前端组1</li>
+                            <li>前端组2</li>
+                            <li>前端组3</li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <p>前端组</p>
+                        <ul class="children">
+                            <li>前端组1</li>
+                            <li>前端组2</li>
+                            <li>前端组3</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id='rightMenu'>
+                    <!-- <li>前端组3 <span>&times;</span></li> -->
+                </ul>
+            </div>
+            <p style="float: right;"><button id='cancel'>取消</button><button id='ok'>确定</button></p>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main='main'></script>
+</body>
+
+</html>

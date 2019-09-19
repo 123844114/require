@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        如果模块加js后缀，那么该路径被视为普通路径，不需要require解析，直接相对于主目录也就是服务器路径。
+        如果模块没有加js后缀，那么该路径需要被require解析，解析该路径的时候需要寻找baseUrl.
+        对于baseUrl的设置有三种方式，一下的优先级从低到高
+        页面文件（.html）所在的目录被视为 baseUrl
+        data-main指定的文件别视为   baseUrl
+        在require.config({baseUrl})中显示指定
+        定义一个模块、定义一个有依赖的模块（两种方式）
+        引入一个模块
+        require.config({
+            baseUrl:'',
+            paths:{
+
+            }
+        })
+        核心点：  
+        1. 模块标识符和模块路径
+        2. 定义模块
+        3. 加载模块
+        4. 模块配置
+        5. 处理非规范的模块
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #showBox {
+            width: 100px;
+            height: 50px;
+            background-color: rosybrown;
+            margin: 100px auto;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .list{
+            list-style: none; padding:0; margin:0; max-width:300px;
+        }
+        .list li {
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="showBox">弹框提示</div>
+    </div>
+    <ul class="list" id="list"></ul>
+    <!-- <script src="https://cdn.bootcss.com/require.js/2.3.6/require.js" data-main="index.js"></script> -->
+    <script src="require.js data-main='index.js'></script>
+</body>
+
+</html>

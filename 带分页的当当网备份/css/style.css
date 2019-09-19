@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+body{
+    /* background: #eee; */
+}
+.wrap{
+    width: 940px;
+    background: #fff;
+    margin: 0 auto
+}
+/* 顶部 */
+.search{
+    padding: 20px 0;
+    background: #fff;
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    padding: 0;
+    /* animation: keyframe-header-down .6s ease-in; */
+}
+.search .input{
+    border: 2px solid red;
+    padding: 10px;
+    width: 60%;
+}
+.search button{
+    padding: 5px 10px;
+}
+.search p{
+    text-align: center;
+    background: url(../image/taobao.png) no-repeat
+}
+/* 功能条 */
+.toolbar-con{
+ border: 1px solid #bbbaba;
+ font-size: 14px;
+}
+.toolbar-con span{
+    padding: 10px;
+    display: inline-block;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent
+}
+.toolbar-con span.active{
+    color: red;
+    border-right: 1px solid #bbbaba;
+    border-left: 1px solid #bbbaba;
+}
+.toolbar-con span:hover{
+    color: red;
+    border-right: 1px solid #bbbaba;
+    border-left: 1px solid #bbbaba;
+}
+/* 产品列表1 */
+.default li{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #bbbaba
+}
+.default img{
+    width: 94%;
+    margin-left: 3%;
+}
+.default p{
+    padding: 10px;
+}
+.default .detail span:nth-child(1){
+color: red;
+font-size: 14px;
+float: left;
+}
+.default .detail span:nth-child(2){
+    color: #757272;
+    font-size: 12px;
+    float: right;
+    }
+.default .title{
+    color: #000;
+    height: 30px;
+    line-height: 15px;
+}
+/* 产品列表2 */
+.warning li{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.warning img{
+    width: 10%;
+    float: left;
+}
+
+
+.prodlist li:hover{
+    border: 1px solid red
+}
+
+@keyframes keyframe-header-down{
+0%{
+    top: -50px
+}
+100%{
+    top: 0
+}
+}

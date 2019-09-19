@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width:800px;
+            height:600px;
+            border:1px solid;
+            margin:20px auto;
+        }
+        .wrap .left,.wrap .right{float: left;}
+        .wrap .left{width:500px;height:550px;border:1px solid;}
+        .wrap .right{width:260px;height:550px;border: 1px solid;margin-left:10px;}
+        .wrap .left .contents{height:450px;position: relative;overflow: hidden;}
+        .wrap .left .contents span{
+            white-space: nowrap;
+            width: 200px;
+            height: 40px;
+            display: inline-block
+        }
+        .wrap .left .foot{background: #cecece;height:50px;}
+        .right div:first-child{height:450px;overflow: auto;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <div class="contents" id='cc'>
+                <span>测试</span>
+            </div>
+            <div class="foot">
+                弹幕位置:
+                <input type="radio" name="pos" value=0>顶部
+                <input type="radio"  name="pos" value=1>中部
+                <input type="radio"  name="pos" value=2>底部
+                <button>清屏</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="list">
+
+            </div>
+            <div>
+                <input type="text" class="ipt"> <button class="send">发送</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="require.js" data-main="main"></script>
+</html>

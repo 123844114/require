@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin:0;list-style: none;}
+        .box{width:1000px;height:500px;margin:20px auto;}
+        h2{width:150px;height:50px;line-height: 50px;text-align: center;color:blue;border-top:2px solid blue;background:#cecece;}
+        .left,.right{float:left;background: #cecece;height: 450px;}
+        .left{width:300px;}
+        .right{width:700px;overflow: auto;}
+        .left ul li{float: left;width:33%;}
+        .right dl{
+            float:left;
+            margin:5px;
+            width:15%;
+        }
+        .right dl img{width:100%;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>英雄数据库</h2>
+        <div class="contents">
+            <div class="left">
+                <h4>搜索英雄</h4>
+                <input type="text" id="search">
+                <h4>战场职责</h4>
+                <ul class="roles">
+                    <!-- <li><input type="checkbox">坦克</li> -->
+                </ul>
+            </div>
+            <div class="right">
+                <!-- <dl>
+                    <dt>
+                        <img src="img/1.jpg" alt="">
+                    </dt>
+                    <dd>百里</dd>
+                </dl> -->
+               
+            </div>
+        </div>
+    </div>
+</body>
+<script src="require.js" data-main="main"></script>
+</html>

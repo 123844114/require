@@ -1,0 +1,19 @@
+define(function(){
+    return [
+        {
+            name:'八维',
+            address:'海淀八维',
+            mobile:'1234567890',
+            email:'123@qq.com',
+            alis:'家',
+            flag:true
+        },
+        {
+            name:'八维1',
+            address:'海淀八维',
+            mobile:'1234567890',
+            email:'123@qq.com',
+            alis:'公司'
+        }
+    ]
+})

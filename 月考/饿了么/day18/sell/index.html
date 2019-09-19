@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./resource/require.js" data-main="./resource/main"></script>
+</head>
+<body>
+<div class="wrap">
+    <!--header-->
+    <header>
+        <ul class="list-l">
+            <li class="active">所有商品</li>
+            <li>评价</li>
+            <li>商家资质</li>
+        </ul>
+        <ul class="list-r">
+            <li>默认排序</li>
+            <li>评分</li>
+            <li>销量</li>
+            <li id="price">价格</li>
+        </ul>
+    </header>
+
+    <!--nav-->
+    <nav>
+        <ul>
+            <li class="active"><span>热销</span></li>
+            <li><span>潇湘口味菜</span></li>
+            <li><span>家乡小炒</span></li>
+            <li><span>川菜</span></li>
+            <li><span>蒸菜</span></li>
+            <li><span>时蔬</span></li>
+            <li><span>凉菜类</span></li>
+            <li><span>靓汤</span></li>
+            <li><span>主食</span></li>
+            <li><span>饮料</span></li>
+            <li><span>支付宝扫码拿红包</span></li>
+        </ul>
+    </nav>
+
+    <!--main-->
+    <div id="main">
+        <!--section——热销-->
+        <!--<section>
+            <div class="title">
+                <h3>热销</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——潇湘口味菜-->
+        <!--<section>
+            <div class="title">
+                <h3>潇湘口味菜</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——家乡小炒-->
+        <!--<section>
+            <div class="title">
+                <h3>家乡小炒</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——川菜-->
+        <!--<section>
+            <div class="title">
+                <h3>川菜</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+-->
+        <!--section——蒸菜-->
+       <!-- <section>
+            <div class="title">
+                <h3>蒸菜</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——时蔬-->
+        <!--<section>
+            <div class="title">
+                <h3>时蔬</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——凉菜类-->
+        <!--<section>
+            <div class="title">
+                <h3>凉菜类</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——靓汤-->
+        <!--<section>
+            <div class="title">
+                <h3>靓汤</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——主食-->
+        <!--<section>
+            <div class="title">
+                <h3>主食</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+
+        <!--section——饮料-->
+        <!--<section>
+            <div class="title">
+                <h3>饮料</h3>
+                <span>大家喜欢吃，才叫真好吃</span>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/1.png" alt=""></dt>
+                    <dd>
+                        <p class="des">钵仔米饭(一盒两碗)</p>
+                        <p class="volume">月售800+份</p>
+                        <div class="shopping-content">
+                            <span>￥4</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/2.png" alt=""></dt>
+                    <dd>
+                        <p class="des">尖椒炒荷包蛋</p>
+                        <p class="volume">月售68份</p>
+                        <div class="shopping-content">
+                            <span>￥28</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/3.png" alt=""></dt>
+                    <dd>
+                        <p class="des">猪血丸子炒腊肉</p>
+                        <p class="volume">月售11份</p>
+                        <div class="shopping-content">
+                            <span>￥58</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="./resource/img/4.png" alt=""></dt>
+                    <dd>
+                        <p class="des">酸菜鱼</p>
+                        <p class="detail">本店活鱼现杀现做,烹饪时间大约40分钟，点餐后请耐心...</p>
+                        <p class="volume">月售2份</p>
+                        <div class="shopping-content suancaiyu">
+                            <span>￥99</span>
+                            <div class="shopping-cart">加入购物车</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>-->
+    </div>
+
+    <!-- <div id="dialog" class="dialog">
+        <div class="modal-dialog">
+            <h3 class="title">X</h3>
+            <dl class="modal-content">
+                <dt><img src="./resource/img/1.png" alt=""></dt>
+                <dd>
+                    <p class="des">钵仔米饭(一盒两碗)</p>
+                    <div class="shopping-content">
+                        <span>￥4</span>
+                        <div class="shopping">立即购买</div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div> -->
+</div>
+</body>
+</html>

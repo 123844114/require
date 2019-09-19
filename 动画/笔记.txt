@@ -1,0 +1,61 @@
+1、引入velocity.min.js
+    Velocity(div,{},{})
+    第一个参数：需要添加动画的元素
+    第二个参数：对象，设置需要改变的属性
+         {
+             width:200,
+             height:300,
+             marginLeft:1000,
+             marginTop:500,
+             backgroundColor:#0f0
+         }
+         属性名字 ：可以添加引号可以不添加   "margin-left"   marginLeft     
+         背景颜色：需要设置backgroundColor；值 必须是#000000
+    第三个参数:对象
+        {
+            duration:1000  动画持续的时间
+            loop:2   动画循环的次数  无限循环  true
+            delay:2000  动画延迟多长时间执行
+            begin:fucntion(){
+                动画开始之前执行
+            },
+            complete:function(){
+                动画结束后执行
+            },
+            easing:"ease-in"   //控制动画的速度 ease-in    逐渐加速
+                                               ease-out   逐渐减速
+                                               ease-in-out  先加速再减速
+                                               linear     匀速
+        }
+2、链式动画
+     Velocity(div,{
+         width:200
+     },1000)
+     Velocity(div,{
+         height:200
+     },1000)
+3、Velocity(div,"stop")停止动画
+   Velocity(div,"pause")暂停动画
+   Velocity(div,"resume") 继续动画
+   Velocity(div,"reverse")恢复原状
+4、转换
+    平移：
+    translateX:100
+    translateY:100
+    scale 缩放 宽度和高度
+    scaleX 缩放 宽度
+    scaleY 缩放 高度
+    rotateX  x轴
+    rotateY  y轴
+    rotateZ  z轴
+5、滚动条动画
+   Velocity(目标元素,"scroll",{
+       duration:2000
+   })
+6、淡入淡出
+   Velocity(div,"fadeIn",1000)淡入
+   Velocity(div,"fadeOut",1000)淡出
+7、展开收起
+   Velocity(div,"slideUp",1000)收起
+   Velocity(div,"slideDown",1000)展开
+

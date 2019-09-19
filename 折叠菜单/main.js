@@ -1,0 +1,9 @@
+require.config({
+    baseUrl:"js"
+})
+require(["menu","data","dom"],function(M,Data,D){
+      M.init({
+          data:Data,//数据
+          listC:D.getDom(".list")//存放的容器
+      })
+})

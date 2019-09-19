@@ -1,0 +1,11 @@
+require.config({
+    baseUrl:"js"
+})
+require(["dom","data","sel"],function(D,data,Sel){
+    Sel({
+        data:data,
+        provinceC:D.getID("province"),//省
+        cityC:D.getID("city"),//市
+        areaC:D.getID("area")//区
+    })
+})

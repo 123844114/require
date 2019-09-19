@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            list-style: none;
+        }
+        nav{width:1000px;
+        height:50px;
+        line-height:50px;
+        border-bottom:1px solid #cecece;
+        padding:0 5px;margin:0px auto;
+        background: #fff;
+         }
+        nav .left{float: left;}
+        nav .time{float: right;}
+        .list{width: 1000px;margin:5px auto 0;overflow: hidden;}
+        .list dl{float:left;width:20%;padding:5px;box-sizing: border-box;}
+        .list dl img{width:100%;}
+        .list dl p span{text-decoration: line-through}
+        nav.fixed{
+            position: fixed;
+            top:0;
+            left:50%;
+            margin-left:-500px;
+        }
+        nav span{cursor: pointer;}
+        nav span.active{color:red;}
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <nav>
+        <div class="left">
+                <span class="active">默认</span>
+                <span type="price" sort="1">价格</span>
+                <span type="sales" sort="1">销量</span>
+                <input type="checkbox">仅看有货
+        </div>
+        <div class="time">
+            距离回北京还剩
+            <b></b>
+        </div>
+    </nav>
+    <div class="list">
+        <!-- <dl>
+            <dt><img src="img/1.jpg" alt=""></dt>
+            <dd>
+                <p>$69</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </dd>
+        </dl> -->
+        
+    </div>
+</body>
+<script src="require.js" data-main="main"></script>
+</html>

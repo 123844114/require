@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+i{
+    color: red
+}
+.error input{
+ border: 1px solid red
+}
+.tip{
+    text-indent: 80px;
+    display: none
+}
+.error .tip{
+    color: red;
+    display: block
+}
+.spec>div{
+    margin-left: 88px;
+}
+.spec>p{float: left;}

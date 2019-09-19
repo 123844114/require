@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            background: red;
+            display: none;
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, mollitia!</div>
+</body>
+<script src="velocity.min.js"></script>
+<script>
+    var div = document.getElementsByTagName("div")[0];
+    Velocity(div,"slideDown",2000)
+    Velocity(div,"slideUp",2000)
+</script>
+</html>
